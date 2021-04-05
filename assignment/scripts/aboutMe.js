@@ -5,7 +5,7 @@ let firstName = 'James';
 let lastName = 'Kelley';
 // 3 - Create a third variable called `fullName`, assign it the value of your first and last name
 // (remember, you already have variables for this, can you use those?)
-let fullName = firstName + lastName;
+let fullName = firstName + ' ' + lastName;
 // 4 - Console log the value of `fullName`
 console.log( fullName );
 // 5 - Create a variable called `luckyNumber` and assign it the value of your lucky number.
