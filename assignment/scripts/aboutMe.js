@@ -21,7 +21,7 @@ let food = 'Tacos';
 // 9 - Create a variable called `pets` and set it to the value of the number of pets you have
 let pets = 0;
 // 10 - Create a variable called `friendsPets` and assign it the value of the number of pets your friend has
-let friendsPets = 2;
+let friendsPets = 3;
 // 11 - Add two pets to your `pets` variable
 pets += 2;
 // 12 - Create a constant variable called `allowedPets` and set it to a number value of your choice
@@ -77,33 +77,35 @@ if ( pets < allowedPets ) {
 let mostPets;
 
 if ( pets > friendsPets) {
-  mostPets = pets
+  mostPets = pets;
   console.log( mostPets );
 } else if ( friendsPets > pets ) {
-  mostPets = friendsPets
+  mostPets = friendsPets;
   console.log( mostPets );
 } else {
-  mostPets = pets || friendsPets
+  mostPets = pets || friendsPets;
   console.log( mostPets );
 }
 
-// easist way to do this is to use built-in method Math.max() of Javascript.
+// easist way to do this is to use built-in method Math.max() of JavaScript.
 // I used this quite frequently in python along with other built-in methods.
 // let mostPets = Math.max(pets, friendsPets)
 // console.log( mostPets );
 
 // 17 - Rewrite question 16 with a `switch` statement. You'll need to do research!
 
-switch (mostPets) {
-  case friendsPets:
-    friendsPets > pets;
-    console.log( friendsPets );
+switch (true) {
+  case (pets > friendsPets):
+    mostPets = pets;
+    console.log( mostPets );
     break;
-  case pets:
-    pets > friendsPets;
-    console.log( pets );
+  case (friendsPets > pets):
+    mostPets = friendsPets;
+    console.log( mostPets );
     break;
-  default:
+  case (pets == friendsPets):
+    mostPets = pets || friendsPets;
     console.log( mostPets )
 }
+
 // 18 -- Rewrite question 13 with a `ternary` operator. You'll need to do research!
