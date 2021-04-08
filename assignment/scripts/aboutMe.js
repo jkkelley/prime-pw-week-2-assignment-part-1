@@ -13,7 +13,7 @@ let luckyNumber = 7;
 // 6 - Console log this sentence, adding in the variables you created above:
 // 'My name is (full name), and I think (lucky number) is a winner!'.
 // Refer back to the videos if you need help with this one.
-console.log( 'My name is ' + fullName + ', and I think ' + luckyNumber + ' is a winner!' );
+console.log( `My name is ${fullName}, and I think ${luckyNumber} is a winner!`);
 // 7 - Create a variable named `adventurous` and set it to a boolean value (true or false)
 let adventurous = true;
 // 8 - Create a variable named `food`, and set its value to a string of your favorite food
@@ -100,18 +100,22 @@ if ( pets > friendsPets) {
 switch (true) {
   case (pets > friendsPets):
     mostPets = pets;
-    console.log( mostPets );
+    console.log( mostPets ); // I have more pets than my friend.
     break;
   case (friendsPets > pets):
     mostPets = friendsPets;
-    console.log( mostPets );
+    console.log( mostPets ); // My friend has more pets.
     break;
-  case (pets == friendsPets):
+  case (pets === friendsPets):
     mostPets = pets || friendsPets;
-    console.log( mostPets )
+    console.log( mostPets ) // Both myself and friend have an equal amount of pets.
 }
 
+// I've spent quite a bit of time learning/reading about the switch method. I find it really
+// interesting and nice way to write human readable code.
+
 // 18 -- Rewrite question 13 with a `ternary` operator. You'll need to do research!
+
 var onward = adventurous ? (
   console.log( 'Adventures are great!' )
 ) : (
